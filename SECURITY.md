@@ -4,7 +4,7 @@
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.0.x   | :white_check_mark: |
+| Unity 2019.4.1f1 (64-bit)   | :white_check_mark: |
 
 ## Reporting a Vulnerability
 
