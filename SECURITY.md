@@ -8,7 +8,7 @@
 
 ## Reporting a Vulnerability
 
-If a vulnerability is spotted please contact rm20killer
+If a vulnerability is spotted please contact @rm20killer
 You can expect an update on the reported vulnerability when we read the report
 Expect to be contacted about the vulnerability
 If it is accepted or declined we will inform you ourselves
