@@ -1,2 +1,2 @@
 # TheGame
-The zombie game but with robots
+A zombie game but with robots
