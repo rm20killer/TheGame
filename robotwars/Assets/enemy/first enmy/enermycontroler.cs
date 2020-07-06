@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class enermycontroler : MonoBehaviour
 {
 
-    //public float lookradius = 100f;
+    public float lookradius = 100f;
 
     Transform target;
     NavMeshAgent Agent;
@@ -20,7 +20,11 @@ public class enermycontroler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //float distance = Vector3.Distance(target.position, transform.position);
-        Agent.SetDestination(target.position);
+        float distance = Vector3.Distance(target.position, transform.position);
+        if (distance <= lookradius) 
+        {
+            Agent.SetDestination(target.position);
+        }
+       
     }
 }
