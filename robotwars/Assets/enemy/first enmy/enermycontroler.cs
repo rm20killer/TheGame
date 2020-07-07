@@ -48,14 +48,19 @@ public class enermycontroler : MonoBehaviour
         if (distance <= attackrange)
         {
             //attack animation
-            // deal damage
+            Debug.Log("ai shot");
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), attackrange))
+             
             {
-                if (hit.transform.gameObject.tag=="Player")
+                if (hit.transform.gameObject.CompareTag("Player")) 
                 {
+                    // deal damage
                     Playerhit();
                 }
-                
+                else
+                {
+                    Debug.Log("ai missed");
+                }
             }
         }
     }
