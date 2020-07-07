@@ -53,9 +53,9 @@ public class enermycontroler : MonoBehaviour
             {
                 if (hit.transform.gameObject.tag=="Player")
                 {
-                    return;
+                    Playerhit();
                 }
-                Playerhit();
+                
             }
         }
     }
