@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -7,7 +8,25 @@ public class enermycontroler : MonoBehaviour
 {
 
     public float lookradius = 100f;
+    public float attackrange = 1f;
 
+    #region health
+    public int health;
+    public int starthealth;
+
+    public void AIDamgeTaken(int damage)
+    {
+        health = health - damage;
+        //heathbar.fillAmount = health / starthealth;
+
+    }
+    #endregion
+
+    #region damageStuff
+    private RaycastHit hit;
+    private Ray ray;
+    public int damage = 10;
+    #endregion
     Transform target;
     NavMeshAgent Agent;
     // Start is called before the first frame update
@@ -26,5 +45,23 @@ public class enermycontroler : MonoBehaviour
             Agent.SetDestination(target.position);
         }
        
+        if (distance <= attackrange)
+        {
+            //attack animation
+            // deal damage
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), attackrange))
+            {
+                if (hit.transform.gameObject.tag=="Player")
+                {
+                    return;
+                }
+                Playerhit();
+            }
+        }
+    }
+
+    void Playerhit()
+    {
+        Debug.Log("hit");
     }
 }

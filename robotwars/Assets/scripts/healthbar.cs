@@ -16,4 +16,5 @@ public class healthbar : MonoBehaviour
         heathbar.fillAmount = health / starthealth;
     
     }
+  
 }
