@@ -46,7 +46,7 @@ public class gunShot : MonoBehaviour
                     if (hit.transform.gameObject.tag == "enemy")
                     {
                         Debug.Log("enermy hit");
-                        //damage();
+                        //damage(); //deal damage to enermy
                     }
                 }
                 

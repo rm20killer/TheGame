@@ -63,5 +63,6 @@ public class enermycontroler : MonoBehaviour
     void Playerhit()
     {
         Debug.Log("hit");
+        //deal damage to player
     }
 }
