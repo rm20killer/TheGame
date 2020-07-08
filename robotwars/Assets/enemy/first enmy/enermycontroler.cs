@@ -10,17 +10,7 @@ public class enermycontroler : MonoBehaviour
     public float lookradius = 100f;
     public float attackrange = 1f;
 
-    #region health
-    public int health;
-    public int starthealth;
 
-    public void AIDamgeTaken(int damage)
-    {
-        health = health - damage;
-        //heathbar.fillAmount = health / starthealth;
-
-    }
-    #endregion
 
     #region damageStuff
     private RaycastHit hit;
@@ -67,6 +57,7 @@ public class enermycontroler : MonoBehaviour
 
     void Playerhit()
     {
+
         Debug.Log("hit");
         //deal damage to player
     }

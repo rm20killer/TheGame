@@ -2047,6 +2047,7 @@ GameObject:
   - component: {fileID: 623576093}
   - component: {fileID: 623576092}
   - component: {fileID: 623576091}
+  - component: {fileID: 623576095}
   m_Layer: 0
   m_Name: enermy
   m_TagString: enemy
@@ -2068,8 +2069,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookradius: 100
   attackrange: 10
-  health: 100
-  starthealth: 100
   damage: 10
 --- !u!54 &623576092
 Rigidbody:
@@ -2124,6 +2123,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &623576095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623576090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea5a9f6c2842a04d90d02316a2b365a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  starthealth: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
