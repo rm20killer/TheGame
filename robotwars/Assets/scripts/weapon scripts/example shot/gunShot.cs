@@ -63,7 +63,7 @@ public class gunShot : MonoBehaviour
                             hit.rigidbody.AddForce(-hit.normal * hitforce);
                         }
                         
-                        //damage(); //deal damage to enermy
+                        
                     }
                 }
                 
