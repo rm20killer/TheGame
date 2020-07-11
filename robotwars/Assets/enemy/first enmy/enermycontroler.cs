@@ -7,11 +7,11 @@ using UnityEngine.AI;
 public class enermycontroler : MonoBehaviour
 {
 
-    public float lookradius = 100f;
+    public float lookradius = 1000f;
     public float attackrange = 1f;
-    private float firerate = 20f;
+    public float firerate = 2f;
     private float nexttimetofire = 0;
-
+    public GameObject bullet;
 
     #region damageStuff
     private RaycastHit hit;
@@ -20,7 +20,7 @@ public class enermycontroler : MonoBehaviour
     #endregion
     Transform player;
     NavMeshAgent Agent;
-    private string targethit;
+   // private string targethit;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +38,21 @@ public class enermycontroler : MonoBehaviour
             Agent.SetDestination(player.position);
         }
 
+        if (Time.time>=nexttimetofire && distance<=attackrange)
+        {
+            
+            nexttimetofire = Time.time + 1f / firerate;
+            healthbar target = player.GetComponent<healthbar>();
+            if (target != null)
+            {
+                Debug.Log("hit");
+                target.onDamgeTaken(damage);
+                //deal damage
+            }
+
+            //attack animation
+            //Instantiate(bullet, transform.position, Quaternion.identity);
+        }
         //all below dont work
         //   if (distance <= attackrange && Time.time >= nexttimetofire)
         //   {
@@ -54,14 +69,14 @@ public class enermycontroler : MonoBehaviour
         //            Debug.Log("hit");
         //            target.onDamgeTaken(damage);
         //            // deal damage
-         //       }
-          //      else
-            //    {
-              //      Debug.Log("ai missed");
-                //}
-           // }
+        //       }
+        //      else
+        //    {
+        //      Debug.Log("ai missed");
         //}
-        
+        // }
+        //}
+
     }
 
 }

@@ -14,7 +14,13 @@ public class healthbar : MonoBehaviour
     {
         health = health - damage;
         heathbar.fillAmount = health / starthealth;
-    
+        if (health>=0)
+        {
+            Die();
+        }
     }
-  
+    private void Die()
+    {
+        Destroy(gameObject);
+    }
 }

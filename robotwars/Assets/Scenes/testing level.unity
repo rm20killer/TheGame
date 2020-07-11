@@ -127,7 +127,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16422
+  m_Name: pb_Mesh17500
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6885,7 +6885,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookradius: 100
-  attackrange: 10
+  attackrange: 3
+  firerate: 1
+  bullet: {fileID: 9173542713566620909, guid: a319791fbea73de46a3d2de4df53730b, type: 3}
   damage: 10
 --- !u!54 &623576092
 Rigidbody:
@@ -7430,7 +7432,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-28416
+  m_Name: pb_Mesh17480
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7593,7 +7595,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16304
+  m_Name: pb_Mesh17382
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7868,7 +7870,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-24272
+  m_Name: pb_Mesh17568
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8919,7 +8921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1535390873}
-  speed: 10
+  startspeed: 10
+  sprintspeed: 5
   gravity: -25
   jumpHeight: 5
   groundCheck: {fileID: 1921119500}
@@ -11797,3 +11800,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &9173542713803550733
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 65.15198
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.036377
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -44.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620907, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9173542713566620909, guid: a319791fbea73de46a3d2de4df53730b,
+        type: 3}
+      propertyPath: m_Name
+      value: bullet
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a319791fbea73de46a3d2de4df53730b, type: 3}
