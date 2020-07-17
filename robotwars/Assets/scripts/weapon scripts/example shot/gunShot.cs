@@ -51,7 +51,7 @@ public class gunShot : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.R))
             {
                 //reload animation
-                bullets = 6;
+                bullets = maxbullets;
             }
         }
         else if (gunType == GunTypes.TAP)
